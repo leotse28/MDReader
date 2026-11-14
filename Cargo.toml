@@ -1,0 +1,25 @@
+﻿[package]
+name = "mdreader"
+version = "1.0.0"
+edition = "2024"
+description = "MD Reader - 杞婚噺渚挎惡鐨?Windows Markdown 闃呰鍣紙Rust + WebView2 鐗堬級"
+
+[dependencies]
+base64 = "0.22"
+encoding_rs = "0.8.44"
+percent-encoding = "2.3.2"
+rfd = "0.18.0"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = { version = "1.0.154", features = ["preserve_order"] }
+tao = "0.37.2"
+webview2-com = "0.39"
+windows-core = "0.62"
+wry = "0.57.2"
+
+[profile.release]
+opt-level = "s"
+lto = true
+strip = true
+
+[build-dependencies]
+winresource = "0.1.34"

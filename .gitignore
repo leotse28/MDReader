@@ -1,0 +1,13 @@
+/target
+/dist
+/mdreader.config.json
+/mdreader.config.tmp
+/selftest-result.json
+/.webview-cache
+
+
+# Added by cargo
+#
+# already existing elements were commented out
+
+#/target
